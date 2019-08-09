@@ -1,6 +1,6 @@
 <h1>Ceci est la page principale de l'application nommée "Registration"</h1>
-{% if envoi %}
-<form action="{% url "registration" %}" method="post">
+{% if not envoi %}
+<form action="{% url "registration" %}" enctype="multipart/form-data" method="post">
     {% csrf_token %}
     {{ form.as_p}}
     {{ form2.as_p}}

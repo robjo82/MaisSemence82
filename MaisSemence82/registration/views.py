@@ -4,7 +4,7 @@ from .forms import UserForm, UserExtentionForm
 # Create your views here.
 def registration (request):
     form = UserForm(request.POST or None)
-    form2 = UserExtentionForm(request.POST or None)
+    form2 = UserExtentionForm(request.POST or None, request.FILES)
     envoi = False
     if form.is_valid() and form2.is_valid():
         user = form.save()
