@@ -15,6 +15,7 @@ def hours_declaration (request):
             user = UserExtention.objects.get(user = username)
             user.hours_number += number_of_hours
             user.save()
+            
     return render (
         request,
         'HoursDeclaration/hours_declaration.html'

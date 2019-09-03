@@ -25,6 +25,7 @@ urlpatterns = [
     path('', views.index, name = 'index'),
     path('registration/', include('registration.urls')),
     path('hours_declaration/', include('HoursDeclaration.urls')),
+    path('placeofwork/', include('placeofwork.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

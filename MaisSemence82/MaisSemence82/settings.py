@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'registration.apps.RegistrationConfig',
     'HoursDeclaration.apps.HoursdeclarationConfig',
+    'placeofwork.apps.PlaceofworkConfig',
 ]
 
 MIDDLEWARE = [

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import UserForm, UserExtentionForm
 
 # Create your views here.
@@ -24,7 +24,7 @@ def registration (request):
             user_extention = form2.save(commit = False)
             user_extention.user = user
             user_extention.save()
-            return redirect('some-view-name')
+            return redirect('index')
     else:
         form = UserForm()
         form2 = UserExtentionForm()
