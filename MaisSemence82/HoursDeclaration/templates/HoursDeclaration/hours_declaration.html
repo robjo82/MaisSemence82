@@ -1,0 +1,6 @@
+<h1>Ceci est la page ou tu peux attribuer à chaque salarié le nombre d'heure qu'il a effectué.<h1>
+<form action="{% url "hours_declaration" %}" method = "post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="submit">
+</form>

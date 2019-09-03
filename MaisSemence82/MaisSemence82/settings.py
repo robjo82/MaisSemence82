@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'registration.apps.RegistrationConfig'
+    'registration.apps.RegistrationConfig',
+    'HoursDeclaration.apps.HoursdeclarationConfig',
 ]
 
 MIDDLEWARE = [
