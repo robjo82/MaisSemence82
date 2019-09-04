@@ -11,7 +11,6 @@ class UserExtentionAdmin (admin.ModelAdmin):
         'id_card_recto',
         'id_card_verso',
         'vital_card',
-        'hours_number',
         )
 
     list_filter = (
@@ -23,7 +22,6 @@ class UserExtentionAdmin (admin.ModelAdmin):
         'id_card_recto',
         'id_card_verso',
         'vital_card',
-        'hours_number',
         )
 
     ordering = ('user',)
@@ -37,7 +35,6 @@ class UserExtentionAdmin (admin.ModelAdmin):
         'id_card_recto',
         'id_card_verso',
         'vital_card',
-        'hours_number',
         )
 
 admin.site.register (UserExtention, UserExtentionAdmin)

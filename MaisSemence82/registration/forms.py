@@ -16,5 +16,5 @@ class UserForm(forms.ModelForm):
 class UserExtentionForm(forms.ModelForm):
     class Meta:
         model = UserExtention
-        exclude = ('user', 'hours_number')
+        exclude = ('user',)
     

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .forms import HoursDeclarationForm
 from django.contrib.auth.models import User 
-from registration.models import UserExtention
+from .models import HoursDeclaration
 
 
 def hours_declaration (request):
@@ -12,7 +12,7 @@ def hours_declaration (request):
         presence = form.cleaned_data['presence']
 
         for username in presence :
-            user = UserExtention.objects.get(user = username)
+            user = HoursDeclaration.objects.get(user = username)
             user.hours_number += number_of_hours
             user.save()
             
